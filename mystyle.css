@@ -1,12 +1,18 @@
-nav{
-    width: 100wv;
+html, body {
+    height: 100%;
 }
 
-ul{
+body{
     display: flex;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.flex-container{
+    flex: 1 0 auto;
+}
+
 
 li{
 }
@@ -21,7 +27,7 @@ a:hover{
 }
 
 footer{
-    width: 100vw;
+    flex-shrink: 0;
     border: 1px solid #e7e7e7;
     background-color: #f7f3f3
 }
