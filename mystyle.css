@@ -4,6 +4,19 @@ html, body{
     flex-direction: column;
 }
 
+a, a:link, a:visited{
+    text-decoration: none;
+    color: #222222;
+}
+.signin {
+    background-color: #4285f4; 
+    border: 1px solid #4285f4;
+    padding: 3px 12px 3px 12px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+
 .wrapper {
     display: flex;
     min-height: auto;
@@ -22,6 +35,13 @@ html, body{
     display: flex;
 }
 
+.box1 {
+    padding: 6px;
+}
+
+.box5 {
+    padding: 0px 20px;
+}
 
 .header-left, .footer-left {
     display: flex;
@@ -34,15 +54,29 @@ html, body{
     justify-content: flex-end;
     flex-grow: 1;
 }
-a{
-    text-decoration: none;
+
+
+.box5 a, .box5 a:link, .box5 a:visited{
+    color: #70757a;
+}
+.box5 {
+    background-color: #f1f1f1;
 }
 
 a:hover{
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-footer{
-    border: 1px solid #413f3f;
+.box1 li, img {
+    font: 13px arial;
+    font-family: sans-serif;
+    margin: 0px 5px 0px 15px;
+    padding: 5px;
+}
+
+.box5 li {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    padding: 15px;
 }
 
