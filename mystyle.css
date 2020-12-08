@@ -2,56 +2,13 @@ html, body{
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-a, a:link, a:visited{
-    text-decoration: none;
-    color: #222222;
-}
-#signin {
-    background-color: #4285f4; 
-    border: 1px solid #4285f4;
-    padding: 3px 12px 3px 12px;
-    border-radius: 2px;
-    font-weight: bold;
-    color: white;
-}
-
-.wrapper {
-    display: flex;
-    min-height: auto;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-}
-
-.box2{
-    display: flex;
-    height: 250px;
-    align-items: flex-end;
-}
-
-.box1, .box5 {
-    display: flex;
-}
-
-.box1 {
-    padding: 6px;
-}
-
-button {
-    background-color: rgb(242, 242, 242);
-    border-color: rgb(242, 242, 242);
-}
-.box5 {
-    padding: 0px 20px;
-}
+} /*makes body take up 100% of browser and turns it into a flex column container */
 
 .header-left, .footer-left {
     display: flex;
     justify-content: flex-start;
     flex-grow: 1;
-}
+} /*creates flex containers WITHIN the header and footer which align left and sets the flex grow factor to 1 for equal sizing*/
 
 .header-right, .footer-right {
     display: flex;
@@ -60,15 +17,47 @@ button {
 }
 
 
-.box5 a, .box5 a:link, .box5 a:visited{
-    color: #70757a;
-}
-.box5 {
-    background-color: #f1f1f1;
-}
+a, a:link, a:visited{
+    text-decoration: none;
+    color: #222222;
+} /*Removes underline from navbar and footer */
 
 a:hover{
     text-decoration: underline;
+}
+
+#signin {
+    background-color: rgb(26, 115, 232); 
+    border: 1px solid rgb(26, 115, 232);
+    padding: 9px 23px 9px 23px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-family: "Google-Sans";
+    text-decoration:none;
+}
+
+#signin:hover{
+    opacity: 0.9;
+}
+
+#google-app{
+    height: 15px;
+    width: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+} /*flex container holding together main page content, fills page with flex 1 to make footer sticky */
+
+.box1 {
+    padding: 15px 6px;
+    display: flex;
 }
 
 .box1 li, img {
@@ -78,9 +67,43 @@ a:hover{
     padding: 5px;
 }
 
+.box2{
+    display: flex;
+    height: 250px;
+    align-items: flex-end;
+}
+
+
+.btn {
+    background-color:rgb(242, 242, 242);
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgb(95, 99, 104);
+    padding: 8px 16px 8px 16px;
+    margin: 11px 4px 11px 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 4px black;
+    color:#222222;
+} /* border for btn hover doesn't seem to be woring */
+
+.box5 {
+    padding: 0px 20px;
+    display: flex;
+}
+
+.box5 a, .box5 a:link, .box5 a:visited {
+    color: #70757a;
+}
+.box5 {
+    background-color: #f1f1f1;
+}
+
 .box5 li {
     font-size: 14px;
     font-family: arial, sans-serif;
     padding: 15px;
 }
-
