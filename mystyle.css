@@ -8,14 +8,14 @@ a, a:link, a:visited{
     text-decoration: none;
     color: #222222;
 }
-.signin {
+#signin {
     background-color: #4285f4; 
     border: 1px solid #4285f4;
     padding: 3px 12px 3px 12px;
     border-radius: 2px;
     font-weight: bold;
+    color: white;
 }
-
 
 .wrapper {
     display: flex;
@@ -39,6 +39,10 @@ a, a:link, a:visited{
     padding: 6px;
 }
 
+button {
+    background-color: rgb(242, 242, 242);
+    border-color: rgb(242, 242, 242);
+}
 .box5 {
     padding: 0px 20px;
 }
