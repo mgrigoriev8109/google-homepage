@@ -1,14 +1,20 @@
+/*makes body take up 100% of browser and turns it into a flex column container */
 html, body{
     height: 100%;
     display: flex;
     flex-direction: column;
-} /*makes body take up 100% of browser and turns it into a flex column container */
+} 
 
+
+/*Following two declarations create four classes which
+are flex containers WITHIN the header and footer which 
+align to the left and right, while also setting the
+ flex grow factor to 1 for equal sizing*/
 .header-left, .footer-left {
     display: flex;
     justify-content: flex-start;
     flex-grow: 1;
-} /*creates flex containers WITHIN the header and footer which align left and sets the flex grow factor to 1 for equal sizing*/
+} 
 
 .header-right, .footer-right {
     display: flex;
@@ -16,11 +22,11 @@ html, body{
     flex-grow: 1;
 }
 
-
+/*Removes underline from navbar and footer */
 a, a:link, a:visited{
     text-decoration: none;
     color: #222222;
-} /*Removes underline from navbar and footer */
+}
 
 a:hover{
     text-decoration: underline;
@@ -48,12 +54,13 @@ a:hover{
     padding: 0px;
 }
 
+/*flex container holding together main page content, fills page with flex 1 to make footer sticky */
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
-} /*flex container holding together main page content, fills page with flex 1 to make footer sticky */
+} 
 
 .box1 {
     padding: 15px 6px;
@@ -75,7 +82,6 @@ a:hover{
 
 /* .box3 through textbox feels very rough, would want to come back
 and improve on it in the future. */
-
 .box3{
     margin: 20px;
     height:40px;
@@ -95,6 +101,7 @@ and improve on it in the future. */
     float:right;
     width:13px;
 }
+
 #textbox{
     position:relative;
     bottom:10px;
@@ -104,6 +111,7 @@ and improve on it in the future. */
     height:10px;
     margin-bottom:20px;
 }
+
 .btn {
     background-color:rgb(242, 242, 242);
     border-radius: 5px;
@@ -118,7 +126,7 @@ and improve on it in the future. */
 .btn:hover {
     border: 1px solid #DDD;
     color:#222222;
-} /* border for btn hover doesn't seem to be woring */
+} 
 
 .box5 {
     padding: 0px 20px;
@@ -128,6 +136,7 @@ and improve on it in the future. */
 .box5 a, .box5 a:link, .box5 a:visited {
     color: #70757a;
 }
+
 .box5 {
     background-color: #f1f1f1;
 }
