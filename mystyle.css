@@ -73,10 +73,40 @@ a:hover{
     align-items: flex-end;
 }
 
+/* .box3 through textbox feels very rough, would want to come back
+and improve on it in the future. */
 
+.box3{
+    margin: 20px;
+    height:40px;
+    border: 1px solid #DDD;
+    border-radius: 30px;
+    width: 484px;
+}
+
+#image1{
+    padding-top:13px;
+    width:15px;
+}
+
+#image2{
+    padding-top:10px;
+    padding-right:13px;
+    float:right;
+    width:13px;
+}
+#textbox{
+    position:relative;
+    bottom:10px;
+    outline:none;
+    border:none;
+    width:370px;
+    height:10px;
+    margin-bottom:20px;
+}
 .btn {
     background-color:rgb(242, 242, 242);
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 14px;
     color: rgb(95, 99, 104);
     padding: 8px 16px 8px 16px;
@@ -86,7 +116,7 @@ a:hover{
 }
 
 .btn:hover {
-    border: 4px black;
+    border: 1px solid #DDD;
     color:#222222;
 } /* border for btn hover doesn't seem to be woring */
 
