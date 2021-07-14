@@ -4,7 +4,9 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-            <nav class="nav-bar">
+        <div id="wrapper"> <!-- The grid that nav, main, and footer elements will sit in-->
+            
+            <nav> <!-- first grid item, navbar-->
                 <ul>
                     <li><a href=".">About</a></li>
                     <li><a href=".">Store</a></li>
@@ -12,14 +14,16 @@
                     <li><a href=".">Images</a></li>
                 </ul>
             </nav>
-            <div class="item">
+
+            <main><!-- second grid item, main content-->
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
                 <form>
                     <input type="text" placeholder="Google Search">
                     <input type="text" placeholder="I'm Feeling Lucky">
                 </form>
-            </div>
-            <footer class="item">
+            </main>
+
+            <footer><!-- third grid item, footer-->
                 <ul>
                     <li><a href=".">Advertising</a></li>
                     <li><a href=".">Business</a></li>
@@ -29,5 +33,7 @@
                     <li><a href=".">Settings</a></li>
                 </ul>
             </footer>
+
+        </div>
     </body>
 </html>

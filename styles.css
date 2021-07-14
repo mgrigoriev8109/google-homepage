@@ -17,10 +17,14 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+} /*resets the page*/
 
 body{
-    display: grid;
+    margin: 0; /*prevents scroll bars*/
+}
+
+#wrapper{
+    display: grid; /*sets display to grid, creating gridbox*/
     height:100vh;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
