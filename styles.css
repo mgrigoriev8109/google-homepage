@@ -30,27 +30,27 @@ body{
     grid-template-rows: auto 1fr auto; /*1fr means <main> takes the remaining space after nav and footer*/
 }
 
-
-ul{
-    display:grid;
-    grid-auto-flow: column;
-}
-
-.left-side{
-    justify-self:start;
-}
-
-.right-side{
-    justify-self:end;
-}
-main{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-}
-
 li, a{
     text-decoration: none; /*removes underline*/
     list-style-type: none; /*removes bullet points*/
     color: black; 
+    padding: 8px;
+    display:inline; /*display nav and footer items on one line by removing line breaks*/
+}
+
+main{
+    display: grid; /*turns the main content (image, form inputs) into a grid*/
+    align-self:center; /*aligns the entire main portion of content in the center vertically*/
+}
+
+img, form{
+    justify-self: center; /*aligns image, search input, and buttons in the center horizontally*/
+}
+
+.left-side{
+    float:left;
+}
+
+.right-side{
+    float:right;
 }
