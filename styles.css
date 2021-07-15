@@ -47,10 +47,28 @@ img, form{
     justify-self: center; /*aligns image, search input, and buttons in the center horizontally*/
 }
 
+input{
+    width: 500px;
+    height: 25px;
+    border-radius: 10px;
+    border-color: rgb(241, 239, 239);
+    margin: 15px;
+}
+button{
+    padding: 8px;
+    margin: 7px;
+    border: none;
+    background-color: rgb(238, 235, 235);
+    border-radius: 7px;
+}
 .left-side{
     float:left;
 }
 
 .right-side{
     float:right;
+}
+
+footer{
+    background-color: rgb(236, 236, 236)
 }
